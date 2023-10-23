@@ -1,21 +1,15 @@
-<h1>Angular CLI (Version 14)</h1>
+# Angular CLI
 
-<p>
-  This is project generated to serve as a reproduction starter for Storybook.
-</p>
+This project is a reproduction starter for storybook.
 
-<a  href="https://stackblitz.com/github/storybookjs/sandboxes/tree/next/angular-cli/14-ts/after-storybook?preset=node=">
-  View it in Stackblitz
-</a>
+Forked from (stackblitz)[https://stackblitz.com/github/storybookjs/sandboxes/tree/next/angular-cli/14-ts/after-storybook?preset=node="].
 
-<h3>Testing instructions</h3>
-
-<p>Install dependencies:</p>
-<pre>
-  yarn
-</pre>
-
-<p>Run Storybook:</p>
-<pre>
-  yarn storybook
-</pre>
+## Testing instructions:
+- Install dependencies 
+```
+npm install
+```
+- Run Storybook
+```
+npm run storybook
+```
