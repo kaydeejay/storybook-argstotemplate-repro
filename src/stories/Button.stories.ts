@@ -1,10 +1,17 @@
-import { Meta, StoryObj, argsToTemplate } from '@storybook/angular';
+import { 
+  Meta, 
+  StoryObj,
+  componentWrapperDecorator, 
+  argsToTemplate 
+} from '@storybook/angular';
 import Button from './button.component';
 
-// More on how to set up stories at: https://storybook.js.org/docs/angular/writing-stories/introduction
 const meta: Meta<Button> = {
   title: 'Example/Button',
   component: Button,
+  decorators: [
+    componentWrapperDecorator(story => `<div class="storybook-wrapper">${story}</div>`)
+  ],
   tags: ['autodocs'],
   render: (args: Button) => ({
     props: {
@@ -31,35 +38,35 @@ export const Primary: Story = {
   },
 };
 
-export const Secondary: Story = {
-  args: {
-    label: 'Button',
-  },
-};
+// export const Secondary: Story = {
+//   args: {
+//     label: 'Button',
+//   },
+// };
 
-export const Large: Story = {
-  args: {
-    size: 'large',
-    label: 'Button',
-  },
-};
+// export const Large: Story = {
+//   args: {
+//     size: 'large',
+//     label: 'Button',
+//   },
+// };
 
-export const Small: Story = {
-  args: {
-    size: 'small',
-    label: 'Button',
-  },
-};
+// export const Small: Story = {
+//   args: {
+//     size: 'small',
+//     label: 'Button',
+//   },
+// };
 
-export const Spacing: StoryObj<Button> = {
-  render: (props) => ({
-    props,
-    template: `
-        <p>Minimimum recommend gap is 1rem</p>
-        <div style="display: flex; gap: 1rem;">
-          <storybook-button [label]="label" [size]="size" [primary]="primary" (onClick)="onClick($event)"></storybook-button>
-          <storybook-button [label]="label" [size]="size" [primary]="primary" (onClick)="onClick($event)"></storybook-button>
-        </div>
-      `,
-  }),
-};
+// export const Spacing: StoryObj<Button> = {
+//   render: (props) => ({
+//     props,
+//     template: `
+//         <p>Minimimum recommend gap is 1rem</p>
+//         <div style="display: flex; gap: 1rem;">
+//           <storybook-button [label]="label" [size]="size" [primary]="primary" (onClick)="onClick($event)"></storybook-button>
+//           <storybook-button [label]="label" [size]="size" [primary]="primary" (onClick)="onClick($event)"></storybook-button>
+//         </div>
+//       `,
+//   }),
+// };
