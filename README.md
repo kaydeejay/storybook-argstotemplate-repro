@@ -2,7 +2,7 @@
 
 This project is a reproduction starter for storybook.
 
-Forked from (stackblitz)[https://stackblitz.com/github/storybookjs/sandboxes/tree/next/angular-cli/14-ts/after-storybook?preset=node="].
+Forked from [stackblitz](https://stackblitz.com/edit/github-tjan8p-exmquj?file=package.json).
 
 ## Testing instructions:
 - Install dependencies 
