@@ -10,8 +10,22 @@ const config: StorybookConfig = {
     name: '@storybook/angular',
     options: {},
   },
+  // staticDirs: ['../src/stories/assets'],
   docs: {
     autodocs: 'tag',
   },
+  // async webpackFinal(config: any) {
+  //   config.module.rules = [
+  //     {
+  //       oneOf: [
+  //         {
+  //           test: /\.(png|jpe?g|gif|webp|svg)$/,
+  //           type: 'asset/inline'
+  //         }
+  //       ]
+  //     }
+  //   ]
+  //   return config;
+  // }
 };
 export default config;

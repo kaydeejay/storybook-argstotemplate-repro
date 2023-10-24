@@ -5,6 +5,12 @@ import {
   argsToTemplate 
 } from '@storybook/angular';
 import Button from './button.component';
+import imageSource from './assets/gender-fluid-flag.png';
+
+const image = {
+  src: imageSource,
+  alt: 'my image'
+};
 
 const meta: Meta<Button> = {
   title: 'Example/Button',
@@ -37,6 +43,16 @@ export const Primary: Story = {
     label: 'Button',
   },
 };
+
+export const WithAnImage: Story = {
+  render: () => ({
+    props: {
+      src: image.src,
+      alt: image.alt
+    },
+    template: `<img src="{{src}}" alt="{{alt}}" />`
+  }),
+}
 
 // export const Secondary: Story = {
 //   args: {
